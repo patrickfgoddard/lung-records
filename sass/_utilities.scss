@@ -1,0 +1,57 @@
+@use 'mixins' as m;
+
+.full-bleed {
+  grid-column: 1/4;
+}
+
+.inline-list {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  li {
+    margin: 0;
+    padding: 1rem;
+  }
+}
+
+.lite {
+  font-weight: 100;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.full-bleed {
+  text-align: center;
+  width: 100%;
+  grid-column: 1 / -1;
+}
+
+.image-right {
+  margin: 0;
+  padding: 2rem 0 0;
+  text-align: center;
+  width: 100%;
+
+  img {
+    border: 2px solid #ccc;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+  }
+
+  @media screen and (min-width: 576px) {
+    float: right;
+    margin: 2rem 2rem;
+    width: auto;
+  }
+}
+
+.name-drop {
+  font-style: italic;
+  font-weight: bold;
+}

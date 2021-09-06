@@ -1,0 +1,19 @@
+@mixin headings {
+  h1, h2, h3,
+  h4, h5, h6 {
+      @content;
+  }
+}
+
+@mixin inverseColors {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+@mixin blueGreenGradient {
+  background: linear-gradient(to bottom right, var(--dark-color) 60%, var(--blue-green));
+}
+
+@mixin darkToLightGradient {
+  background: linear-gradient(to bottom, #555 0, #333 50%);
+}

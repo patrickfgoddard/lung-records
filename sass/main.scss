@@ -1,0 +1,92 @@
+@use 'links';
+@use 'variables' as v;
+@use 'functions' as f;
+@use 'mixins' as m;
+@use 'utilities' as u;
+@use 'sections/all-releases';
+@use 'sections/featured-album';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Nixie+One&display=swap');
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Roboto', sans-serif;
+
+html { 
+  font-family: var(--base-font, Helvetica, Arial, sans-serif);
+  font-size: 62.5%; 
+}
+
+body {
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  font-size: 1.8rem;
+  margin: 0;
+  place-content: center;
+}
+
+/*** GENERAL ***/
+p {
+  line-height: 1.75;
+  margin-bottom: 3rem;
+}
+
+/* Headings */
+#{f.headings(1,6)} {
+  color: var(--dark-color);
+  font-family: var(--header-font, cursive);
+  // letter-spacing: 0.2ch;
+  margin: 0 0 2rem;
+}
+
+/*** HEADER ***/
+header,
+footer {
+  text-align: center;
+}
+
+header {
+  background-color: white;
+  padding: 2rem;
+}
+
+#site-logo {
+  height: auto;
+  max-width: 50rem;
+  width: 100%;
+}
+
+/*** MAIN ***/
+main {
+  display: grid;
+  grid-template-columns: minmax(2rem, 1fr) minmax(auto, 96rem) minmax(2rem, 1fr);
+  padding-top: 5rem;
+
+  > * {
+    grid-column: 2/3;
+    margin: 0 auto;
+
+    &:not(.full-bleed) {
+      max-width: 35rem;
+      width: 100%;
+
+      @media screen and (min-width: 760px) {
+        max-width: 96rem;
+      }
+    }
+  }
+}
+
+section {
+  margin-bottom: 5rem;
+
+  h2 {
+    border-bottom: 1px dotted #666;
+  }
+}
+
+/*** FOOTER ***/
+footer {
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  padding: 4rem;
+}
