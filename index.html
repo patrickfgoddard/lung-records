@@ -7,31 +7,31 @@
 
   <title>Lung Records - Take A Breath!</title>
 
-  <!-- <script type="module">
+  <script type="module">
     document.documentElement.classList.remove('no-js');
     document.documentElement.classList.add('js');
-  </script> -->
+  </script>
 
   <link rel="stylesheet" href="/css/main.css">
   <!--  <link rel="stylesheet" href="/assets/css/print.css" media="print">
   -->
 
-  <meta name="description" content="Page description">
-  <meta property="og:title" content="Unique page title - My Site">
-  <meta property="og:description" content="Page description">
+  <meta name="description" content="Lung Records - A record label from Portland, OR">
+  <meta property="og:title" content="Lung Records">
+  <meta property="og:description" content="Lung Records - A record label from Portland, OR">
   <meta property="og:image" content="https://www.mywebsite.com/image.jpg">
   <meta property="og:image:alt" content="Image description">
   <meta property="og:locale" content="en_GB">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta property="og:url" content="https://www.mywebsite.com/page">
+  <meta property="og:url" content="https://www.lungrecords.com">
   <link rel="canonical" href="https://www.lungrecords.com">
 
-  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.png">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="manifest" href="/my.webmanifest">
-  <meta name="theme-color" content="#FF00FF">
+  <meta name="theme-color" content="#222222">
 </head>
 
 <body>
@@ -65,11 +65,11 @@
   <main>
     <section class="about">
       <h1>Welcome to Lung Records</h1>
-      <p>Lung Records is a Portland, OR based independent record label dedicated to releasing high quality vinyl and digital albums from the past and present. Originally started in 1991 as Quagmire Records in Los Gatos, CA by founders Tim Alexander and David Beach, Quagmire pioneered digital distribution of albums by releasing the first ever downloadable album on July 2nd. 1994 - A Western Front - Full Blown Dave. The Quagmire catalog contains 10 releases plus dozens of unreleased albums mostly performed and/or produced by Tim between the mid 1980’s and 2011.</p>
-
-      <p>In 2011, Tim passed away and Beach was diagnosed with Stage IV Lung Cancer. Not a great year. During treatment, Beach decided to start Quagmire again as a tribute to Tim and released his final album, The Sweet Life - Mexico City Heart. A cassette of another Tim project followed (Baby - Comes Alive). Beach then moved to Portland to be closer to work and caregivers. Since having serious-as-cancer cancer tends to change one’s perspective on things, Lung was established as a way to celebrate life and living while honoring the dead and dying through music.</p>
-        
-      <p>Lung’s mission is to release incredible, unique new music, celebrate Tim Alexander’s artistry and raise awareness for Lung Cancer research.</p>
+      <div class="about-blurb" id="about-blurb">
+        <p>Lung Records is a Portland, OR based independent record label dedicated to releasing high quality vinyl and digital albums from the past and present. Originally started in 1991 as Quagmire Records in Los Gatos, CA by founders Tim Alexander and David Beach, Quagmire pioneered digital distribution of albums by releasing the first ever downloadable album on July 2nd. 1994 - A Western Front - Full Blown Dave. The Quagmire catalog contains 10 releases plus dozens of unreleased albums mostly performed and/or produced by Tim between the mid 1980’s and 2011.</p>
+        <p>In 2011, Tim passed away and Beach was diagnosed with Stage IV Lung Cancer. Not a great year. During treatment, Beach decided to start Quagmire again as a tribute to Tim and released his final album, The Sweet Life - Mexico City Heart. A cassette of another Tim project followed (Baby - Comes Alive). Beach then moved to Portland to be closer to work and caregivers. Since having serious-as-cancer cancer tends to change one’s perspective on things, Lung was established as a way to celebrate life and living while honoring the dead and dying through music.</p>
+        <p>Lung’s mission is to release incredible, unique new music, celebrate Tim Alexander’s artistry and raise awareness for Lung Cancer research.</p>
+      </div>
     </section>
     <div class="full-bleed" style="overflow: hidden;" aria-hidden="true">
       <svg
@@ -94,20 +94,15 @@
       <div class="album-container" itemscope itemtype="https://schema.org/MusicAlbum">
         <h3 itemprop="name">Pigtails</h1>
         <link href="/artist/pigtails/album/pigtails" itemprop="url" />
-        <img class="album-cover" alt="Blurry, spooky cover art"
-        src="img/album-covers/pigtails.jpg" itemprop="image" width="400" height="400">
+        <div class="album-cover">
+          <a rel="noopener" href="https://thebandpigtails.bandcamp.com/album/pigtails-2" target="_blank"><img alt="Blurry, spooky cover art"
+          src="img/album-covers/pigtails.jpg" itemprop="image" width="400" height="400"></a>
+        </div>
         <meta content="7" itemprop="numTracks">
         <meta content="Indie" itemprop="genre" >
       
-        <p class="description">Pigtails’ self-titled debut boasts a shimmering, twangy sound; employing warm farfisa organ and lush pedal steel thoughtfully. The result has been described as the soundtrack to a calm before the storm. Producer Raymond Richards (an indie rock veteran who's played with and recorded artists such as Luna, Mojave 3, Acetone, Brian Jonestown Massacre, and Parson Redheads) brings out the understated country-rock leanings of the band, while preserving their fondness for bright and gentle pop.</p>
-      
-        <!-- <h5>Tracks</h5>
-        <div itemprop="track" itemscope itemtype="https://schema.org/MusicRecording">
-          <span itemprop="name">Thing Will Always Work Out</span>
-          <link href="/artist/radiohead/album/the-king-of-limbs/track/bloom" itemprop="url" />
-          <meta content="PT5M14S" itemprop="duration" />5:14
-        </div>
-      -->
+        <p id="featured-release-description" class="description">Pigtails’ self-titled debut boasts a shimmering, twangy sound; employing warm farfisa organ and lush pedal steel thoughtfully. The result has been described as the soundtrack to a calm before the storm. Producer Raymond Richards (an indie rock veteran who's played with and recorded artists such as Luna, Mojave 3, Acetone, Brian Jonestown Massacre, and Parson Redheads) brings out the understated country-rock leanings of the band, while preserving their fondness for bright and gentle pop.</p>
+
         <div><a target="_blank" href="https://thebandpigtails.bandcamp.com/album/pigtails-2">Listen/buy on Bandcamp now.</a></div>
       </div>
     </section>
@@ -133,7 +128,7 @@
       <h2>All Releases</h2>
       <div class="albums-wrapper">
         <div class="album-container" itemscope itemtype="https://schema.org/MusicAlbum">
-          <img class="album-cover" alt="Blurry, spooky cover art" src="img/album-covers/pigtails.jpg" itemprop="image" width="200" height="200">
+          <a rel="noopener" href="https://thebandpigtails.bandcamp.com/album/pigtails-2" target="_blank"><img class="album-cover" alt="Blurry, spooky cover art" src="img/album-covers/pigtails.jpg" itemprop="image" width="200" height="200"></a>
           <h3 itemprop="name">Pigtails</h1>
           <div itemprop="byArtist"  itemscope itemtype="https://schema.org/MusicGroup">
             By <span itemprop="name">Pigtails</span>
@@ -141,7 +136,7 @@
           <div><a target="_blank" href="https://thebandpigtails.bandcamp.com/album/pigtails-2">Listen/buy on Bandcamp now.</a></div>
         </div>
         <div class="album-container" itemscope itemtype="https://schema.org/MusicAlbum">
-          <img class="album-cover" alt="Blurry, spooky cover art" src="img/album-covers/long-distance.jpeg" itemprop="image" width="200" height="200">
+          <a rel="noopener" href="https://evanthomasway.bandcamp.com/album/long-distance" target="_blank"><img class="album-cover" alt="Man standing in the middle of street in Chinatown" src="img/album-covers/long-distance.jpg" itemprop="image" width="200" height="200"></a>
           <h3 itemprop="name">Long Distance</h1>
           <div itemprop="byArtist"  itemscope itemtype="https://schema.org/MusicGroup">
             By <span itemprop="name">by Evan Thomas Way &amp; the Phasers</span>
@@ -149,7 +144,7 @@
           <div><a target="_blank" href="https://evanthomasway.bandcamp.com/album/long-distance">Listen/buy on Bandcamp now.</a></div>
         </div>
         <div class="album-container" itemscope itemtype="https://schema.org/MusicAlbum">
-          <img class="album-cover" alt="Blurry, spooky cover art" src="img/album-covers/mexico-city-heart.jpeg" itemprop="image" width="200" height="200">
+          <a rel="noopener" href="https://thesweetlife.bandcamp.com/album/mexico-city-heart?label=1196674876&tab=music" target="_blank"><img class="album-cover" alt="Picture of album cover with abstract art" src="img/album-covers/mexico-city-heart.jpg" itemprop="image" width="200" height="200"></a>
           <h3 itemprop="name">Mexico City Heart</h1>
           <div itemprop="byArtist"  itemscope itemtype="https://schema.org/MusicGroup">
             By <span itemprop="name">The Sweet Life</span>
@@ -157,7 +152,7 @@
           <div><a target="_blank" href="https://thesweetlife.bandcamp.com/album/mexico-city-heart?label=1196674876&tab=music">Listen/buy on Bandcamp now.</a></div>
         </div>
         <div class="album-container" itemscope itemtype="https://schema.org/MusicAlbum">
-          <img class="album-cover" alt="Blurry, spooky cover art" src="img/album-covers/whats-left.jpeg" itemprop="image" width="200" height="200">
+          <a rel="noopener" href="https://patrickgoddard.bandcamp.com/album/whats-left" target="_blank"><img class="album-cover" alt="Hand dripping with black paint" src="img/album-covers/whats-left.jpg" itemprop="image" width="200" height="200"></a>
           <h3 itemprop="name">What's Left</h1>
           <div itemprop="byArtist"  itemscope itemtype="https://schema.org/MusicGroup">
             By <span itemprop="name">Patrick Goddard</span>
@@ -165,20 +160,20 @@
           <div><a target="_blank" href="https://patrickgoddard.bandcamp.com/album/whats-left">Listen/buy on Bandcamp now.</a></div>
         </div>
         <div class="album-container" itemscope itemtype="https://schema.org/MusicAlbum">
-          <img class="album-cover" alt="Blurry, spooky cover art" src="img/album-covers/pigtails.jpg" itemprop="image" width="200" height="200">
-          <h3 itemprop="name">Pigtails</h1>
+          <a rel="noopener" href="https://awesternfront.bandcamp.com/album/long-live-the-king?label=1196674876&tab=music" target="_blank"><img class="album-cover" alt="Main in clown makeup looking sad" src="img/album-covers/long-live-king.jpg" itemprop="image" width="200" height="200"></a>
+          <h3 itemprop="name">...Long Live The King</h1>
           <div itemprop="byArtist"  itemscope itemtype="https://schema.org/MusicGroup">
-            By <span itemprop="name">Pigtails</span>
+            By <span itemprop="name">A Western Front</span>
           </div>
-          <div><a target="_blank" href="https://thebandpigtails.bandcamp.com/album/pigtails-2">Listen/buy on Bandcamp now.</a></div>
+          <div><a target="_blank" href="https://awesternfront.bandcamp.com/album/long-live-the-king?label=1196674876&tab=music">Listen/buy on Bandcamp now.</a></div>
         </div>
         <div class="album-container" itemscope itemtype="https://schema.org/MusicAlbum">
-          <img class="album-cover" alt="Blurry, spooky cover art" src="img/album-covers/pigtails.jpg" itemprop="image" width="200" height="200">
-          <h3 itemprop="name">Pigtails</h1>
+          <a rel="noopener" href="https://awesternfront.bandcamp.com/album/the-king-is-dead?label=1196674876&tab=music" target="_blank"><img class="album-cover" alt="Man in clown makeup and costume sitting in wheelchair holding baby and laughing" src="img/album-covers/king-is-dead.jpg" itemprop="image" width="200" height="200"></a>
+          <h3 itemprop="name">The King Is Dead...</h1>
           <div itemprop="byArtist"  itemscope itemtype="https://schema.org/MusicGroup">
-            By <span itemprop="name">Pigtails</span>
+            By <span itemprop="name">A Western Front</span>
           </div>
-          <div><a target="_blank" href="https://thebandpigtails.bandcamp.com/album/pigtails-2">Listen/buy on Bandcamp now.</a></div>
+          <div><a target="_blank" href="https://awesternfront.bandcamp.com/album/the-king-is-dead?label=1196674876&tab=music">Listen/buy on Bandcamp now.</a></div>
         </div>      
       </div>
     </section>
@@ -214,7 +209,8 @@
   <footer>&copy; 2021 Lung Records, LLC</footer>
   <!--
   <script src="/assets/js/xy-polyfill.js" nomodule></script>
-  <script src="/assets/js/script.js" type="module"></script>
   -->
+  <script src="/js/main.js" type="module"></script>
+  
 </body>
 </html>

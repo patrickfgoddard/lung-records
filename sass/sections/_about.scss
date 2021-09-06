@@ -1,0 +1,10 @@
+.about {
+  p {
+    transition: all 0.2s;
+  }
+
+  .about-blurb {
+    overflow: hidden;
+    transition: all 0.2s;
+  }
+}

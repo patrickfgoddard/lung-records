@@ -3,8 +3,10 @@
 @use 'functions' as f;
 @use 'mixins' as m;
 @use 'utilities' as u;
+@use 'buttons' as b;
 @use 'sections/all-releases';
 @use 'sections/featured-album';
+@use 'sections/about';
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Nixie+One&display=swap');
 

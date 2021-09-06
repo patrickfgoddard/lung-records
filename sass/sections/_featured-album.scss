@@ -56,7 +56,18 @@
       height: auto;
       max-width: 40rem;
       width: 100%;
+
+      img {
+        height: auto;
+        width: 100%;
+      }
     }
+  }
+
+  .description {
+    --fade-color: var(--dark-color);
+    overflow: hidden;
+    transition: all 0.2s;
   }
 }
 
