@@ -61,7 +61,7 @@
   position: relative;
 
   &::before {
-    background: linear-gradient(transparent, var(--fade-color));
+    background: linear-gradient(rgba(255, 255, 255, 0) 75%, var(--fade-color));
     content: '';
     position: absolute;
     top: 0;

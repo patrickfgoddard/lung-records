@@ -1,5 +1,6 @@
 export const moreText = 'Show More';
 export const lessText = 'Show Less';
+export const divideBy = 1.5;
 
 export function writeShowHideButton(parent) {
   let button = document.createElement("button");
@@ -12,7 +13,7 @@ export function writeShowHideButton(parent) {
 
 export function hideCopy(parent) {
   let height = parent.offsetHeight;
-  parent.style.height = height / 2 + 'px';
+  parent.style.height = height / divideBy + 'px';
   parent.classList.add('truncated');
 }
 
@@ -26,11 +27,11 @@ export function buttonToggleBehavior(button) {
   if (blurb.classList.contains('expanded')) {
     blurb.classList.remove("expanded");
     blurb.classList.add("truncated");
-    blurb.style.height = height / 2 + 'px';
+    blurb.style.height = height / 1.5 + 'px';
   } else {
     blurb.classList.add("expanded");
     blurb.classList.remove("truncated");
-    blurb.style.height = height * 2 + 'px';
+    blurb.style.height = height * 1.5 + 'px';
   }
   
 
