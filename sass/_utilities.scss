@@ -82,3 +82,26 @@
   white-space: nowrap;
   width: 1px;
 }
+
+.wave-decoration {
+  overflow: hidden;
+
+  svg {
+    display: block;
+    fill: #ffffff; 
+    width: 125%; 
+    height: 25px;
+  }
+
+  &.dark {
+    svg {
+      fill: var(--dark-color);
+    }  
+  }
+
+  &.inverted {
+    svg {
+      transform: rotate(180deg);
+    }
+  }
+}
