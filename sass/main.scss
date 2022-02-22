@@ -48,7 +48,7 @@ footer {
 
 header {
   background-color: white;
-  padding: 2rem;
+  padding: 2rem 2rem 5rem;
 }
 
 #site-logo {
@@ -61,7 +61,10 @@ header {
 main {
   display: grid;
   grid-template-columns: minmax(2rem, 1fr) minmax(auto, 96rem) minmax(2rem, 1fr);
-  padding-top: 5rem;
+
+  > *:first-child {
+    margin-top: -2rem;
+  }
 
   > * {
     grid-column: 2/3;
@@ -91,4 +94,11 @@ footer {
   background-color: var(--dark-color);
   color: var(--light-color);
   padding: 4rem;
+  text-align: center;
+}
+
+.footer-logo {
+  display: block;
+  margin: 0 auto;
+  padding: 2rem 0 5rem;
 }
