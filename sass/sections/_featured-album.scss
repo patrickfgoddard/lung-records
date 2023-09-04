@@ -25,6 +25,11 @@
   h3,
   h4 {
     color: var(--light-color);
+    background: #EEEEEE;
+    background: radial-gradient(circle farthest-corner at center center, #FA8500 0%, #EEEEEE 50%, #8ECAE6 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
   }
 
   a:link,
@@ -38,6 +43,8 @@
 }
 
 .featured-release {
+  background-color: var(--dark-color);
+  color: var(--light-color);
   display: grid;
   grid-template-columns: minmax(2rem, 1fr) minmax(auto, 96rem) minmax(2rem, 1fr);
 
